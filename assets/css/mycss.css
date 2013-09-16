@@ -1,0 +1,103 @@
+html,body{
+	min-height:100%;
+    font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 15px;
+}
+
+.container{
+	width: 900px;
+	min-height: 100%;
+	margin:auto;
+	margin-top:20px;
+}
+
+.title{
+    font-family: 'Dancing Script', Georgia, Times, serif;
+    font-size: 60px;
+    line-height: 60px;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+#bar{
+	background-color: rgba(255,255,255,0.5);
+	opacity:0.2;
+}
+
+.navbar{
+	list-style:none;
+	font-size: 20px;
+	width:auto;;
+	height:30px; 
+	margin-left:260px;
+	float:left;
+	text-align:center;
+}
+.navbar li{
+	float:left;
+	padding-right:15px;
+}
+li:before{
+	content:"|";
+	padding-right:15px;
+}
+li:first-child:before{
+	content:none;
+}
+
+/* horizontal carousel*/
+.horizontal {
+    width: 300px;
+    height:200px;
+    margin:auto;
+    position: relative;
+    overflow: hidden;
+}
+.horizontal .items {
+    width: 1200px;
+    -webkit-animation: hscroll 20s infinite;
+    -moz-animation: hscroll 20s infinite;
+    -ms-animation: hscroll 20s infinite;
+    animation: hscroll 20s infinite;
+}
+.horizontal .item {
+    margin: 0;
+    float: left;
+    width: 300px;
+}
+/*
+/* The keyframes calculations are based on assumption of 4 items in the carousel.
+/* You should notice the pattern for your own calculations.
+*/
+@-webkit-keyframes hscroll {
+    0%, 18.75%  { margin-left: 0 }
+    25%, 43.75% { margin-left: -300px; }
+    50%, 68.75% { margin-left: -600px; }
+    75%, 93.75% { margin-left: -900px; }
+    100%  { margin-left: 0 }
+}
+@-moz-keyframes hscroll {
+    0%, 18.75%  { margin-left: 0 }
+    25%, 43.75% { margin-left: -300px; }
+    50%, 68.75% { margin-left: -600px; }
+    75%, 93.75% { margin-left: -900px; }
+    100%  { margin-left: 0 }
+}
+@-ms-keyframes hscroll {
+    0%, 18.75%  { margin-left: 0 }
+    25%, 43.75% { margin-left: -300px; }
+    50%, 68.75% { margin-left: -600px; }
+    75%, 93.75% { margin-left: -900px; }
+    100%  { margin-left: 0 }
+}
+@keyframes hscroll {
+    0%, 18.75%  { margin-left: 0 }
+    25%, 43.75% { margin-left: -300px; }
+    50%, 68.75% { margin-left: -600px; }
+    75%, 93.75% { margin-left: -900px; }
+    100%  { margin-left: 0 }
+}
+
+/**********************/
