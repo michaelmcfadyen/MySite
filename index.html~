@@ -192,7 +192,7 @@
 					</div>
 					<hr class='tile'>
 					<div class='tilecontent'>
-						<p>As a third year group project he created a small problem solver for the game Go. This included creating the program and writing a dissertation on it. The program included an AI engine in the form of AlphaBeta, a <a href='https://raw.github.com/zoltanmagyar/TeamProject3/master/Dissertation/images/gobanscreenshot.png?login=michaelmcfadyen&token=8a69ddc43d515e85b5eca0acf76630bb' class='screenshot' rel='https://raw.github.com/zoltanmagyar/TeamProject3/master/Dissertation/images/gobanscreenshot.png?login=michaelmcfadyen&token=8a69ddc43d515e85b5eca0acf76630bb' >GUI</a> and a move evaluator.</p>
+						<p>As a third year group project he created a small problem solver for the game Go. This included creating the program and writing a dissertation on it. The program included an AI engine in the form of AlphaBeta, a GUI and a move evaluator.</p>
 					</div>
 				</div>
 	

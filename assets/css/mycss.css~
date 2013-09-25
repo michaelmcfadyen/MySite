@@ -243,7 +243,6 @@ hr {
 	text-align:right;
 	font-weight:bold;
 	padding-top:200px;
-	margin-bottom: 100px;
 }
 .contact a{
 	color:#555555;

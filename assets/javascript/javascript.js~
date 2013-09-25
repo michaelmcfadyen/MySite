@@ -50,11 +50,7 @@ function change(next, pos){
 
 /************************************/
 
-/*
- * Script to change content of the right hand tile when a selectiom is made.
- * Two versions had to be made to accomodate for the second set of tiles titled 'Activities'
- *
-*/
+
 $('.skill li').on("click", function(e) {
   var $this = $(this),
       $id = $this.attr('id'),
