@@ -21,7 +21,7 @@ setInterval(function(){
 	var nextran = Math.floor((Math.random()*6));
 	var pos = Math.floor((Math.random()*3));
 	change(nextran,pos);
-},5000);
+},3000);
 
 
 function change(next, pos){
