@@ -4,7 +4,7 @@ angular.module('app', []).controller('gitController', function($scope, $http, $i
 	$scope.visibleGitProject = "";
 
 	$scope.ajaxPeriodicCall = function(){
-		$http.get("https://api.github.com/users/michaelmcfadyen/repos?type=all&sort=updated&access_token=b87d16987c705d929a894248b75674b871ef9b4d").success(
+		$http.get("https://api.github.com/users/michaelmcfadyen/repos?type=all&sort=updated&access_token=0bc16faa59f4793d3f080bbe87e96216aefae0e2").success(
     		function(response){
     			var gitDetails = [];
     			for(var i = 0; i < response.length; i++){
@@ -12,7 +12,7 @@ angular.module('app', []).controller('gitController', function($scope, $http, $i
     				var commitsUrl = project.commits_url.replace("{/sha}", "/");
     				var getCommits = commitsUrl + project.default_branch;
 
-    				$http.get(getCommits + "?access_token=b87d16987c705d929a894248b75674b871ef9b4d").success(
+    				$http.get(getCommits + "?access_token=0bc16faa59f4793d3f080bbe87e96216aefae0e2").success(
     					function(commitsResponse){
     						var projectName = commitsResponse.url.split("/");
     						gitDetails.push({project: projectName[5], url: commitsResponse.html_url, message: commitsResponse.commit.message, date: commitsResponse.commit.committer.date, stats: commitsResponse.stats});
@@ -26,7 +26,7 @@ angular.module('app', []).controller('gitController', function($scope, $http, $i
 
     $scope.start = function() {
       $scope.stop(); 
-      $interval($scope.ajaxPeriodicCall, 60000);
+      $interval($scope.ajaxPeriodicCall, 120000);
     };
 
     $scope.stop = function() {

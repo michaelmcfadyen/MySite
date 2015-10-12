@@ -88,6 +88,7 @@ ul{
     position: relative;
     overflow: hidden;
     padding-top:30px;
+    box-sizing: content-box;
 }
 .horizontal .items {
     width: 1500px;
